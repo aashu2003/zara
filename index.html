@@ -29,7 +29,10 @@
 
 
 var check = 1;
-var langv = "en";
+var langv = "hi";
+document.getElementById("btn").addEventListener("click" , ()=>{
+  langv = document.getElementById("lang").value;
+})
 var txt =new SpeechSynthesisUtterance();
 let send_greating = async ()=>{
   let time = new Date().getHours();
